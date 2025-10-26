@@ -1,2 +1,66 @@
+/* Custom CSS for the Flexbox Challenge */
 
-/* Your CSS Code here. */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0ffef;
+}
+
+/* 1. The Holder (Parent Container) Styling */
+.holder {
+    /* REQUIRED 1: Activate Flexbox */
+    display: flex; 
+    
+    /* REQUIRED 2: Distribute space evenly, pushing first/last items to the edges */
+    justify-content: space-between; 
+    
+    /* REQUIRED 3: Allow items to move to the next row instead of squashing */
+    flex-wrap: wrap; 
+
+    /* Add some visual spacing for rows */
+    gap: 10px; 
+    
+    /* Ensure the container is visible and styled */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+}
+
+/* 2. Item (Child Element) Styling */
+.item {
+    /* Define fixed dimensions for the blocks */
+    width: 100px;
+    height: 100px;
+    
+    /* Center the number inside the block */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Typography */
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Color Coding for Items */
+.green {
+    background-color: #2ecc71; /* Bright Green */
+}
+
+.red {
+    background-color: #e74c3c; /* Red */
+}
+
+.blue {
+    background-color: #3498db; /* Blue */
+}
+
+p {
+    margin-top: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
